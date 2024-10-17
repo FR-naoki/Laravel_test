@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('contact_forms', function (Blueprint $table) {
-            $table->string('title', 50);
+            $table->string('title', 50)->after('name');
         });
     }
 
@@ -22,11 +22,4 @@ return new class extends Migration
      * Reverse the migrations.
      *
      * @return void
-     */
-    public function down()
-    {
-        Schema::table('contact_forms', function (Blueprint $table) {
-            //
-        });
-    }
-};
+   
