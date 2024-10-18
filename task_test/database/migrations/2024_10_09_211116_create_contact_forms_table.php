@@ -21,7 +21,6 @@ return new class extends Migration
             $table->boolean('gender');
             $table->tinyInteger('age');
             $table->string('contact', 200);
-
             $table->timestamps();
         });
     }

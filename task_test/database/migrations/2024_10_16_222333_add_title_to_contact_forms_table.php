@@ -22,4 +22,11 @@ return new class extends Migration
      * Reverse the migrations.
      *
      * @return void
-   
+     */
+    public function down()
+    {
+        Schema::table('contact_forms', function (Blueprint $table) {
+            $table->dropColumn('title');
+        });
+    }
+};
